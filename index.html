@@ -3,23 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GYM Buddies</title>
+  <title>Gym Buddies</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to Gym Buddies 💪</h1>
-  <p>Select a body part to see exercises:</p>
+  <header>
+    <h1>💪 Gym Buddies</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Workouts</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
 
-  <div class="body-parts">
-    <button onclick="showExercises('Chest')">🫀 Chest</button>
-    <button onclick="showExercises('Arms')">💪 Arms</button>
-    <button onclick="showExercises('Legs')">🦵 Legs</button>
-    <button onclick="showExercises('Shoulders')">🧠 Shoulders</button>
-    <button onclick="showExercises('Back')">🔙 Back</button>
-    <button onclick="showExercises('Core')">🎯 Core</button>
-  </div>
+  <main>
+    <section class="intro">
+      <h2>Train by Body Part</h2>
+      <p>Click a body area to explore muscle exercises</p>
+    </section>
 
-  <div id="exercise-output" class="exercise-output"></div>
+    <section class="body-grid">
+      <div class="body-card" onclick="showExercises('Chest')">🫀<span>Chest</span></div>
+      <div class="body-card" onclick="showExercises('Back')">🔙<span>Back</span></div>
+      <div class="body-card" onclick="showExercises('Arms')">💪<span>Arms</span></div>
+      <div class="body-card" onclick="showExercises('Shoulders')">🧠<span>Shoulders</span></div>
+      <div class="body-card" onclick="showExercises('Legs')">🦵<span>Legs</span></div>
+      <div class="body-card" onclick="showExercises('Core')">🎯<span>Core</span></div>
+    </section>
+
+    <section id="exercise-section" class="exercise-section"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gym Buddies. Stay strong!</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
