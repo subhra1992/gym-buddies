@@ -5,6 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Chest Workouts - Gym Buddies</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #1a1a1a;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffc107;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .exercise-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .exercise-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .exercise-card:hover {
+      transform: scale(1.03);
+    }
+
+    .exercise-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .exercise-card h2 {
+      padding: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    a.exercise-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,10 +72,13 @@
 
   <main>
     <section class="exercise-grid">
-      <div class="exercise-card">
-        <img src="https://images.ctfassets.net/8urtyqugdt2l/4wPk3KafRwgpwIcJzb0VRX/4894054c6182c62c1d850628935a4b0b/desktop-best-chest-exercises.jpg" alt="Barbell Bench Press">
-        <h2>Barbell Bench Press</h2>
-      </div>
+
+      <a class="exercise-link" href="barbell-bench-press.html">
+        <div class="exercise-card">
+          <img src="https://images.ctfassets.net/8urtyqugdt2l/4wPk3KafRwgpwIcJzb0VRX/4894054c6182c62c1d850628935a4b0b/desktop-best-chest-exercises.jpg" alt="Barbell Bench Press">
+          <h2>Barbell Bench Press</h2>
+        </div>
+      </a>
 
       <div class="exercise-card">
         <img src="https://i.ytimg.com/vi/VmB1G1K7v94/maxresdefault.jpg" alt="Dumbbell Bench Press">
@@ -55,10 +114,12 @@
         <img src="https://swolverine.com/cdn/shop/articles/Dumbbell_Chest_Fly_825bd98f-7e67-4b98-ba86-3db39e835290_600x600_crop_center.jpg?v=1739510458" alt="Dumbbell Flyes">
         <h2>Dumbbell Flyes</h2>
       </div>
+
     </section>
   </main>
 </body>
 </html>
+
 
 
 
