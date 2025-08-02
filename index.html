@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gym Buddies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GYM Buddies</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Welcome to Gym Buddies 💪</h1>
-  <p>Track your workouts and stay fit!</p>
+  <p>Select a body part to see exercises:</p>
 
-  <button onclick="startWorkout()">Start Workout</button>
+  <div class="body-parts">
+    <button onclick="showExercises('Chest')">🫀 Chest</button>
+    <button onclick="showExercises('Arms')">💪 Arms</button>
+    <button onclick="showExercises('Legs')">🦵 Legs</button>
+    <button onclick="showExercises('Shoulders')">🧠 Shoulders</button>
+    <button onclick="showExercises('Back')">🔙 Back</button>
+    <button onclick="showExercises('Core')">🎯 Core</button>
+  </div>
+
+  <div id="exercise-output" class="exercise-output"></div>
 
   <script src="script.js"></script>
 </body>
