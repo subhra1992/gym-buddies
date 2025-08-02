@@ -10,40 +10,38 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
     }
-
     header {
-      background-color: #1a1a1a;
+      background: #222;
       color: white;
-      padding: 1rem;
+      padding: 15px;
       text-align: center;
     }
-
+    nav {
+      text-align: center;
+      margin: 10px;
+    }
     nav a {
-      color: #ffc107;
+      color: #007bff;
       text-decoration: none;
     }
-
-    main {
-      padding: 1rem;
+    .container {
       max-width: 800px;
       margin: auto;
+      padding: 20px;
     }
-
-    img {
+    .exercise-img {
       width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1rem;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
-
     h2 {
-      color: #333;
-      margin-top: 1.5rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
     }
-
     ul {
-      padding-left: 1.5rem;
+      list-style: disc;
+      padding-left: 20px;
     }
   </style>
 </head>
@@ -51,35 +49,59 @@
 
   <header>
     <h1>Dumbbell Bench Press</h1>
-    <nav>
-      <a href="chest.html">← Back to Chest Workouts</a>
-    </nav>
   </header>
 
-  <main>
-    <img src="https://musclemaker.com.au/wp-content/uploads/2020/03/Dumbbell-Bench-Press-How-to.jpg" alt="Dumbbell Bench Press">
+  <nav>
+    <a href="chest.html">← Back to Chest Workouts</a>
+  </nav>
 
-    <h2>Overview</h2>
-    <p>The Dumbbell Bench Press is a fundamental chest-building exercise that targets the pectorals, triceps, and shoulders. It provides a greater range of motion than the barbell press and helps correct muscle imbalances.</p>
+  <div class="container">
+    <img
+      src="https://musclemaker.com.au/wp-content/uploads/2020/03/Dumbbell-Bench-Press-How-to.jpg"
+      alt="Dumbbell Bench Press"
+      class="exercise-img"
+    />
 
-    <h2>Muscles Worked</h2>
-    <ul>
-      <li>Pectoralis Major (Chest)</li>
-      <li>Anterior Deltoids (Shoulders)</li>
-      <li>Triceps Brachii</li>
-    </ul>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        The Dumbbell Bench Press is a fundamental chest-building exercise that targets the pectorals, triceps, and shoulders.
+        It provides a greater range of motion than the barbell press and helps correct muscle imbalances.
+      </p>
+    </section>
 
-    <h2>How to Perform</h2>
-    <ol>
-      <li>Lie on a flat bench with a dumbbell in each hand resting on your thighs.</li>
-      <li>Use your thighs to help raise the dumbbells as you lie back on the bench.</li>
-      <li>Hold the dumbbells shoulder-width apart with palms facing forward.</li>
-      <li>Press the dumbbells upward until your arms are fully extended.</li>
-      <li>Slowly lower the dumbbells back to chest level.</li>
-      <li>Repeat for the desired number of reps.</li>
-    </ol>
+    <section>
+      <h2>Muscles Worked</h2>
+      <ul>
+        <li>Pectoralis Major (Chest)</li>
+        <li>Anterior Deltoids (Shoulders)</li>
+        <li>Triceps Brachii</li>
+      </ul>
+    </section>
 
-    <h2>Tips</h2>
-    <ul>
-      <li>Keep your feet flat on the floor for stability.
+    <section>
+      <h2>How to Perform</h2>
+      <ol>
+        <li>Lie on a flat bench with a dumbbell in each hand resting on your thighs.</li>
+        <li>Use your thighs to help raise the dumbbells as you lie back on the bench.</li>
+        <li>Hold the dumbbells shoulder-width apart with palms facing forward.</li>
+        <li>Press the dumbbells upward until your arms are fully extended.</li>
+        <li>Slowly lower the dumbbells back to chest level.</li>
+        <li>Repeat for the desired number of reps.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Tips</h2>
+      <ul>
+        <li>Keep your feet flat on the floor for stability.</li>
+        <li>Control the movement – don’t let the dumbbells drop quickly.</li>
+        <li>Keep your back flat and avoid arching excessively.</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>
+
 
