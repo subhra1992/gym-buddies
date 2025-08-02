@@ -13,7 +13,7 @@
     }
 
     header {
-      background: #1a1a1a;
+      background-color: #1a1a1a;
       color: white;
       padding: 1rem;
       text-align: center;
@@ -22,47 +22,58 @@
     nav a {
       color: #ffc107;
       text-decoration: none;
-      font-size: 1rem;
+    }
+
+    main {
+      padding: 1rem;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .exercise-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
-      padding: 1rem;
     }
 
     .exercise-card {
-      background: #fff;
+      background-color: #f4f4f4;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
       text-align: center;
-      transition: transform 0.2s ease;
     }
 
     .exercise-card:hover {
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
 
     .exercise-card img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
     }
 
     .exercise-card h2 {
-      padding: 0.5rem;
+      padding: 0.8rem;
       font-size: 1.1rem;
     }
 
-    a.exercise-link {
+    .exercise-card a {
       text-decoration: none;
       color: inherit;
+    }
+
+    @media (max-width: 600px) {
+      .exercise-card img {
+        height: 150px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>🏋️ Chest Workouts</h1>
     <nav>
@@ -73,52 +84,52 @@
   <main>
     <section class="exercise-grid">
 
-      <a class="exercise-link" href="barbell-bench-press.html">
-        <div class="exercise-card">
-          <img src="https://images.ctfassets.net/8urtyqugdt2l/4wPk3KafRwgpwIcJzb0VRX/4894054c6182c62c1d850628935a4b0b/desktop-best-chest-exercises.jpg" alt="Barbell Bench Press">
-          <h2>Barbell Bench Press</h2>
-        </div>
+      <a class="exercise-card" href="barbell-bench-press.html">
+        <img src="https://images.ctfassets.net/8urtyqugdt2l/4wPk3KafRwgpwIcJzb0VRX/4894054c6182c62c1d850628935a4b0b/desktop-best-chest-exercises.jpg" alt="Barbell Bench Press">
+        <h2>Barbell Bench Press</h2>
       </a>
 
-      <div class="exercise-card">
-        <img src="https://i.ytimg.com/vi/VmB1G1K7v94/maxresdefault.jpg" alt="Dumbbell Bench Press">
+      <a class="exercise-card" href="dumbbell-bench-press.html">
+        <img src="https://musclemaker.com.au/wp-content/uploads/2020/03/Dumbbell-Bench-Press-How-to.jpg" alt="Dumbbell Bench Press">
         <h2>Dumbbell Bench Press</h2>
-      </div>
+      </a>
 
-      <div class="exercise-card">
+      <a class="exercise-card" href="#">
         <img src="https://musclemagfitness.com/wp-content/uploads/Incline-Dumbell-Bench-Press-1024x576.jpg.webp" alt="Incline Bench Press">
         <h2>Incline Bench Press</h2>
-      </div>
+      </a>
 
-      <div class="exercise-card">
+      <a class="exercise-card" href="#">
         <img src="https://i.ytimg.com/vi/0xRvl4Qv3ZY/maxresdefault.jpg" alt="Decline Bench Press">
         <h2>Decline Bench Press</h2>
-      </div>
+      </a>
 
-      <div class="exercise-card">
+      <a class="exercise-card" href="#">
         <img src="https://cdn.muscleandstrength.com/sites/default/files/chest-dip.jpg" alt="Chest Dips">
         <h2>Chest Dips</h2>
-      </div>
+      </a>
 
-      <div class="exercise-card">
+      <a class="exercise-card" href="#">
         <img src="https://www.muscletech.in/wp-content/uploads/2025/01/push-up-exercises.webp" alt="Push-Ups">
         <h2>Push-Ups</h2>
-      </div>
+      </a>
 
-      <div class="exercise-card">
+      <a class="exercise-card" href="#">
         <img src="https://cdn.shopify.com/s/files/1/0618/9462/3460/files/stock-photo-bodybuilder-is-working-on-his-chest-with-cable-crossover-in-gym-scream-for-motivation-750696826-800x587.jpg" alt="Cable Crossovers">
         <h2>Cable Crossovers</h2>
-      </div>
+      </a>
 
-      <div class="exercise-card">
+      <a class="exercise-card" href="#">
         <img src="https://swolverine.com/cdn/shop/articles/Dumbbell_Chest_Fly_825bd98f-7e67-4b98-ba86-3db39e835290_600x600_crop_center.jpg?v=1739510458" alt="Dumbbell Flyes">
         <h2>Dumbbell Flyes</h2>
-      </div>
+      </a>
 
     </section>
   </main>
+
 </body>
 </html>
+
 
 
 
