@@ -1,28 +1,76 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #ffc107;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Grid layout for exercises */
 .exercise-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  padding: 20px;
 }
 
+/* Exercise card styling */
 .exercise-card {
-  border: 1px solid #ccc;
+  background: #fff;
   border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  background-color: #fdfdfd;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.exercise-card:hover {
+  transform: scale(1.02);
 }
 
 .exercise-card img {
   width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
+  height: 200px;
+  object-fit: cover;
 }
 
 .exercise-card h2 {
+  font-size: 20px;
+  margin: 0;
   padding: 12px;
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
 }
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
 
 
 
